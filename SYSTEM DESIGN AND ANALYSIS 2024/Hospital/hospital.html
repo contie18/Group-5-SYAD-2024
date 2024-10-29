@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="hospital.css">
+    <style>
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="navBar">
+
+        <div>
+            <button type="button" style="border: none; outline: none; background-color: #003049;" class="logOut"
+                onclick="location.href='../index.html';">
+                <img style="height: 30px; position: absolute; left: 70px; top: 35px;" src="../icon/log-out.png" alt="">
+            </button>
+
+        </div>
+
+        <h3 class="mainTitle">MUST MEDICAL STORE</h3>
+
+    </div>
+
+    <div class="recordsSection">
+
+        <div class="mainContainer">
+
+            <form action="patientsrecords.php" method="post">
+
+                <div class="patientsInfo">
+                    <label for="name">
+                        <h4 class="labelTxt">Full Name*</h4>
+                        <input type="text" name="name" required placeholder="Enter Full Name">
+                    </label>
+                    <label for="phone">
+                        <h4 class="labelTxt">phone*</h4>
+                        <input name="phone" type="number" required placeholder="Enter Phone number" pattern="09\d{8}">
+                    </label>
+
+
+                    <div class="dates">
+                        <label class="labelSmall" for="Date">
+                            <h4 class="labelTxt">Issue Date*</h4>
+                            <input class="values" name="idate" class="dateInput" type="date" required min="2024-10-30"
+                                placeholder="height(cm)">
+                        </label>
+
+                        <label class="labelSmall" for="age">
+                            <h4 class="labelTxt">Age*</h4>
+                            <input required class="values" name="age" class="dateInput" type="number" min="1">
+                        </label>
+                    </div>
+
+                    <label for="location">
+                        <h4 class="labelTxt">location*</h4>
+                        <input name="location" type="text" required placeholder="Enter Location">
+                    </label>
+                    <label for="medicine">
+                        <h4 class="labelTxt">medicine*</h4>
+                        <input name="medicine" type="text" required placeholder="Medicine">
+                    </label>
+
+                    <label for="price">
+                        <h4 class="labelTxt">Price*</h4>
+                        <input name="price" type="number" required placeholder="Price(Mwk)" min="100">
+                    </label>
+
+                </div>
+                <div class="diseaseInfo">
+
+                   
+
+                    <label for="age">
+                        <h4 class="labelTxt">Disease description*</h4>
+                        <textarea style="width: 400px; height: 130px; resize: none;" rows="7" cols="40"
+                            title="Description should be less than 500 letters." name="disease" id="disease"
+                            placeholder="Enter Disease description" required></textarea>
+                    </label>
+
+
+                    <label for="age">
+                        <h4 class="labelTxt">Prescription*</h4>
+                        <textarea style="width: 400px; height: 130px; resize: none;" rows="7" cols="40"
+                            title="Description should be less than 500 letters." name="prescription" id="prescription"
+                            placeholder="Enter Prescription" required></textarea>
+                    </label>
+
+                    <label for="quantity">
+                        <h4 class="labelTxt">Quantity*</h4>
+                        <input name="quantity" type="number" required placeholder="Quantity of medicine" min="1">
+                    </label>
+                </div>
+        </div>
+
+        <div class="buttons">
+
+            <button class="Btn" type="reset">Reset</button>
+            <button type="submit" class="Btn ">Submit <span class="arrow"><img class="arrowIcon" src="../icon/arrow.png"
+                        alt=""></span></button>
+        </div>
+
+        </form>
+
+    </div>
+
+
+</body>
+
+</html>

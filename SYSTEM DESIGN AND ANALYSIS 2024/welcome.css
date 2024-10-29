@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+:root{
+    --txtClr: #fefae0;
+    --BgColr: #003049;
+    --hoverClr: #457B9D;
+    --titleClr: #003049;
+    --Title:  "Montserrat", sans-serif;
+    --text: "Roboto", serif;
+    --border: px solid #002f499c;
+    --boxShadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    --btnHover: 0 4px 8px #03081d33;
+    --btn: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --popUpsShadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text);
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: rgb(251,233,241);
+    background-image: linear-gradient(to right, #100841 0%, #483297 31%, #082146 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    height: 60vh;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: var(--popUpsShadow);
+    background: radial-gradient(circle, rgb(247, 221, 232) 5%, rgb(219, 233, 253) 96%); 
+}
+
+.welcomeBtn{
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: #003049;
+    border: none;
+    color: var(--txtClr);
+    font-size: 1em;
+    font-weight: 600;
+    font-family: "poppins";
+    letter-spacing: 1px;
+    transition: .3s;
+
+}
+.welcomeBtn:hover{
+            box-shadow: var(--btnHover);
+           background-color: var(--hoverClr);
+        }
+.btns{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 40%;
+    height: 10vh;
+}
+
+
+h3{
+    font-size: 2.5em;
+    color: var(--titleClr);
+    font-family: var(--Title);
+    letter-spacing: -2px;
+    font-weight: 800;
+}
+p{
+    color: var(--titleClr);
+    font-size: 1.1em;
+    font-weight: 400;
+    font-family: "poppins";
+
+}

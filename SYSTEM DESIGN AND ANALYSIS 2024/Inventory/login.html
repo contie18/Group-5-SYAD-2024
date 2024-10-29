@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Log In</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="inventorylogin.css">
+</head>
+
+<body>
+
+    <div class="mainContainer">
+
+        
+
+        <div class="imageleft">
+
+        </div>
+        <form action="../Hospital/login.php" method="POST" onsubmit="return validateEmail()">
+            <h3 class="title">Welcome,back</h3>
+        
+            <input class="" type="email" id="email" name="email" placeholder="Enter Your Email" required>
+        
+            <input type="password" name="password" pattern=".{6,}" title="Six or more characters" id="password"
+                placeholder="Enter Your Password" required>
+        
+            <button type="submit" class="Btn ">Submit <span class="arrow"><img class="arrowIcon" src="../icon/arrow.png"
+                        alt=""></span></button>
+        </form>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
